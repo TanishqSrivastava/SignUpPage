@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title> Sign Up Page</title>
+        <style>
+            body{
+                margin:0px;
+                display:flex;
+                gap:0px;
+
+            }
+            .right{
+                display:flex;
+                flex-direction:column;
+                height:100%;
+                width:70%;
+                
+                justify-content:center;
+                background-color:lightgrey;
+            }
+            .signup{
+                margin-top:50px;
+                margin-bottom:50px;
+                height:300px;
+                background-color:white;
+                width:100%;
+                display:flex;
+                flex-direction:column;
+
+            }
+            .right h1{
+                margin-left:40px;
+            }
+            .row{
+                align-items:center;
+                display:flex;
+                flex-direction:row;
+                gap:30px;
+                
+                width:100%;
+
+            }
+            .col{
+                display:flex;
+                flex-direction:column;
+                gap:0px;
+            }
+            .signup form{
+                margin-left:40px;
+                display:flex;
+                flex-direction:column;
+                gap:20px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div style="height:100%;width:30%;background-color:blue;">
+            <img src="photo.avif" style="height:100%;width:100%;">
+            <div class="header" style="top:50px;position:absolute;background: rgba(0,0,0,0.5);width:30%;color:white;text-align:center;font-size:25px;">
+                Odin
+            </div>
+        </div>
+        <div class="right">
+            <h1> Test</h1>
+            <div class="signup">
+                <h1> Let's do this </h1>
+                <form>
+                   
+                    <span class="row">
+                        <span class="col"><label for="firstname">First Name</label><input type="text" name="firstname"></span> <span class="col"><label for="lastname">Last Name</label><input type="text" name="lastname"></span></span>
+                    
+                        <span class="row">
+                            <span class="col"><label for="email">Email</label><input type="text" name="email"></span> <span class="col"><label for="phone">Phone</label><input type="text" name="phone"></span></span>
+
+                            <span class="row">
+                                <span class="col"><label for="password">Password</label><input type="text" name="password"></span> <span class="col"><label for="confpassword">Confirm Password</label><input type="text" name="confpassword"></span></span>
+
+                </form>
+            </div>
+            <button type="submit" style="background-color:Green;padding:20px;border:1px solid black;width:fit-content;margin-left:60px;font-size:25px;border-radius:20px;"> Submit Button </button>
+        </div>
+    </body>
+</html>
